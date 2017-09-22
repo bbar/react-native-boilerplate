@@ -10,7 +10,7 @@ Basic useful feature list:
 ## Installation
 
 ```shell
-$ git clone https://github.com/jetdelivery/agent-portal-react-native.git my-app
+$ git clone https://github.com/bbar/react-native-boilerplate.git my-app
 $ cd my-app
 $ yarn
 ```
