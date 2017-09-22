@@ -7,13 +7,13 @@ import {
   Text,
 } from './styled';
 
-const JobDetails = () => (
+const Screen3 = () => (
   <Container>
-    <Text>JobDetails Component</Text>
+    <Text>Screen 3 Component</Text>
   </Container>
 );
 
-JobDetails.propTypes = {
+Screen3.propTypes = {
 
 };
 
@@ -25,4 +25,4 @@ const mapDispatchToProps = (dispatch) => ({
   dispatch,
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(JobDetails);
+export default connect(mapStateToProps, mapDispatchToProps)(Screen3);

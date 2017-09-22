@@ -9,7 +9,7 @@ import {
   Text,
 } from './styled';
 
-class Performance extends Component {
+class Screen2 extends Component {
   static propTypes = {
     navigator: PropTypes.object,
   }
@@ -43,9 +43,16 @@ class Performance extends Component {
   }
 
   render() {
+    const { navigator } = this.props;
     return (
       <Container>
-        <Text>Performance Component</Text>
+        <Text
+          onPress={() => {
+            navigator.push({
+              screen: 'aprn.Screen3',
+            });
+          }}
+        >Screen 2 Component (Press Me!)</Text>
       </Container>
     );
   }
@@ -59,4 +66,4 @@ const mapDispatchToProps = (dispatch) => ({
   dispatch,
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(Performance);
+export default connect(mapStateToProps, mapDispatchToProps)(Screen2);

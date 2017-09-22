@@ -9,7 +9,7 @@ import {
   Text,
 } from './styled';
 
-class Status extends Component {
+class Home extends Component {
   static propTypes = {
     navigator: PropTypes.object,
   }
@@ -48,67 +48,32 @@ class Status extends Component {
       const parts = event.link.split('/'); // Link parts
 
       switch (parts[0]) {
-        case 'CheckIn':
+        case 'Home':
           navigator.showModal({
-            screen: 'aprn.CheckIn',
+            screen: 'aprn.Home',
             animationType: 'slide-up',
-            title: 'Check In',
+            title: 'Home',
           });
           break;
-        case 'CheckOut':
+        case 'Screen1':
           navigator.showModal({
-            screen: 'aprn.CheckOut',
+            screen: 'aprn.Screen1',
             animationType: 'slide-up',
-            title: 'Check Out',
+            title: 'Screen 1',
           });
           break;
-        case 'JobDetails':
+        case 'Screen2':
           navigator.showModal({
-            screen: 'aprn.JobDetails',
+            screen: 'aprn.Screen2',
             animationType: 'slide-up',
-            title: 'Job Details',
+            title: 'Screen 2',
           });
           break;
-        case 'Jobs':
+        case 'Screen3':
           navigator.showModal({
-            screen: 'aprn.Jobs',
+            screen: 'aprn.Screen3',
             animationType: 'slide-up',
-            title: 'Jobs',
-          });
-          break;
-        case 'Login':
-          navigator.showModal({
-            screen: 'aprn.Login',
-            animationType: 'slide-up',
-            title: 'Login',
-          });
-          break;
-        case 'Messages':
-          navigator.showModal({
-            screen: 'aprn.Messages',
-            animationType: 'slide-up',
-            title: 'Messages',
-          });
-          break;
-        case 'Performance':
-          navigator.showModal({
-            screen: 'aprn.Performance',
-            animationType: 'slide-up',
-            title: 'Performance',
-          });
-          break;
-        case 'Status':
-          navigator.showModal({
-            screen: 'aprn.Status',
-            animationType: 'slide-up',
-            title: 'Status',
-          });
-          break;
-        case 'Vehicles':
-          navigator.showModal({
-            screen: 'aprn.Vehicles',
-            animationType: 'slide-up',
-            title: 'Vehicles',
+            title: 'Screen 3',
           });
           break;
         default:
@@ -120,7 +85,7 @@ class Status extends Component {
   render() {
     return (
       <Container>
-        <Text>Status Component</Text>
+        <Text>Home Component</Text>
       </Container>
     );
   }
@@ -134,4 +99,4 @@ const mapDispatchToProps = (dispatch) => ({
   dispatch,
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(Status);
+export default connect(mapStateToProps, mapDispatchToProps)(Home);

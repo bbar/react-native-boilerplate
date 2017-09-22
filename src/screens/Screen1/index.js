@@ -9,7 +9,7 @@ import {
   Text,
 } from './styled';
 
-class Vehicles extends Component {
+class Screen1 extends Component {
   static propTypes = {
     navigator: PropTypes.object,
   }
@@ -45,7 +45,7 @@ class Vehicles extends Component {
   render() {
     return (
       <Container>
-        <Text>Vehicles Component</Text>
+        <Text>Screen 1 Component</Text>
       </Container>
     );
   }
@@ -59,4 +59,4 @@ const mapDispatchToProps = (dispatch) => ({
   dispatch,
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(Vehicles);
+export default connect(mapStateToProps, mapDispatchToProps)(Screen1);
