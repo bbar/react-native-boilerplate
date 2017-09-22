@@ -11,6 +11,7 @@ Basic useful feature list:
 
 ```shell
 $ git clone https://github.com/jetdelivery/agent-portal-react-native.git my-app
+$ cd my-app
 $ yarn
 ```
 
